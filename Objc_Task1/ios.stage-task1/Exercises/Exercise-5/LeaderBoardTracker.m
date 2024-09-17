@@ -13,7 +13,7 @@
     
     NSMutableArray *resultRanks = [NSMutableArray array];
     NSOrderedSet *ranksSet = [NSOrderedSet orderedSetWithArray:rankedArray];
-    NSMutableArray *ranksArray = [ranksSet deepCopy];
+    NSMutableArray *ranksArray = [ranksSet.array mutableCopy];
     
     for (int i = 0; i < playerArray.count; i++) {
         if(rankedArray.count == 0){
